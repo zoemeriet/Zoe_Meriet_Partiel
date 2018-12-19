@@ -94,20 +94,15 @@ var createPageDeux = function(data) {
   // Animation du slider
   var total = 0;
   var num = 0;
-  total = num + total;
   right.addEventListener('click', function() {
-    // slider.style.transform = 'translateX(-100%)';
+    slider.style.transform = 'translateX(-100%)';
     num = -100;
-    console.log(num);
-    console.log(total);
   });
   left.addEventListener('click', function() {
     num = 100;
-    console.log(num);
-    console.log(total);
-    // slider.style.transform = 'translateX(0)';
+    slider.style.transform = 'translateX(0)';
   });
-
+  console.log(total);
 
 };
 
